@@ -1,0 +1,25 @@
+.award {
+	padding-top: 120px;
+
+	&__inner {}
+
+	&__title {
+		font-size: 55px;
+		margin-bottom: 42px;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -40px;
+
+		.product {
+			margin-left: 40px;
+		}
+	}
+
+	&__btn {
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+}

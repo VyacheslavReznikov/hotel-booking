@@ -1,0 +1,38 @@
+.rooms {
+	padding-top: 100px;
+
+	&__inner {}
+
+	&__label {
+		font-size: 80px;
+		line-height: 88px;
+		letter-spacing: 0.44px;
+		max-width: 600px;
+		margin: 0 auto;
+		margin-bottom: 60px;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__column {
+		flex: 1;
+		margin-right: 44px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&--big {
+			flex: 2;
+		}
+	}
+
+
+	&__btn {
+		margin: 0 auto;
+		margin-bottom: 95px;
+	}
+}

@@ -1,0 +1,26 @@
+$dark: #252525;
+$violet: #4e26fd;
+
+
+@mixin font-bebas {
+	font-family: 'Bebas', sans-serif;
+}
+
+@mixin font-bnb {
+	font-family: 'Bebas-neue-bold', sans-serif;
+}
+
+@mixin font300 {
+	font-family: 'OpenSans', sans-serif;
+	font-weight: 300;
+}
+
+@mixin font400 {
+	font-family: 'OpenSans', sans-serif;
+	font-weight: 400;
+}
+
+@mixin font700 {
+	font-family: 'OpenSans', sans-serif;
+	font-weight: 700;
+}

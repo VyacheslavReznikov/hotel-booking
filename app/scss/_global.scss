@@ -1,0 +1,106 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: #f8f8f8;
+	font-size: 16px;
+	@include font300;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 1 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	padding: 0;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.logo {
+	transition: all 0.8s;
+	transform-origin: 0;
+
+	&:hover {
+		transform: rotate(3deg);
+	}
+}
+
+.title {
+	@include font-bnb;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.6px;
+}
+
+.btn {
+	cursor: pointer;
+	border: 2px solid $violet;
+	width: 177px;
+	height: 56px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include font-bebas;
+	text-transform: uppercase;
+	color: $violet;
+	font-size: 24px;
+	letter-spacing: 0.6px;
+
+	transition: all 0.3s;
+
+	&:hover {
+		color: #fff;
+		background-color: $violet;
+	}
+}
