@@ -76,6 +76,7 @@ img {
 }
 
 .title {
+	color: #000;
 	@include font-bnb;
 	text-align: center;
 	text-transform: uppercase;
@@ -85,6 +86,7 @@ img {
 .btn {
 	cursor: pointer;
 	border: 2px solid $violet;
+	border-radius: 7px;
 	width: 177px;
 	height: 56px;
 	display: flex;
@@ -101,6 +103,32 @@ img {
 
 	&:hover {
 		color: #fff;
-		background-color: $violet;
+		background: linear-gradient(to top, $violet, lighten($violet, 10%), $violet, lighten($violet, 10%), $violet);
+		background-size: 200% 200%;
+		animation: bg 3s ease-in-out infinite;
+	}
+
+	&--blue {
+		background-color: rgb(0, 0, 255);
+		color: #fff;
+		border-color: rgb(0, 0, 255);
+
+		&:hover {
+			border-color: $violet;
+		}
+	}
+}
+
+@keyframes bg {
+	0% {
+		background-position: 0 -50%;
+	}
+
+	50% {
+		background-position: 0 100%;
+	}
+
+	100% {
+		background-position: 0 -50%;
 	}
 }

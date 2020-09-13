@@ -14,11 +14,36 @@
 	&__inner {
 		padding: 35px 0;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
+
+		@media(max-width: 768px) {
+			justify-content: space-evenly;
+		}
+		@media(max-width: 576px) {
+			flex-direction: column;
+			justify-content: start;
+		}
 	}
 
-	&__column {}
+	&__column {
+		padding-right: 10px;
+
+		@media(max-width: 768px) {
+			margin-bottom: 50px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		@media(max-width: 576px) {
+			width: 100%;
+			padding-left: 30px;
+			margin-bottom: 30px;
+		}
+	}
 
 	&__logo {
 		display: block;
@@ -32,7 +57,7 @@
 	&__title {
 		@include font400;
 		letter-spacing: 0.2px;
-		margin-bottom: 22px;		
+		margin-bottom: 22px;
 	}
 
 	&__social {}
@@ -55,6 +80,10 @@
 		position: relative;
 		display: block;
 		margin-bottom: 18px;
+
+		@media(max-width: 576px) {
+			margin-bottom: 25px;
+		}
 
 		&:last-child {
 			margin-bottom: 0;
@@ -80,9 +109,17 @@
 .footer-menu {
 	column-count: 3;
 
+	@media(max-width: 576px) {
+		column-count: 2;
+	}
+
 	&__item {
 		display: block;
 		margin-bottom: 12px;
+
+		@media(max-width: 576px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__link {

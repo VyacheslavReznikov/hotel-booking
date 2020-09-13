@@ -4,9 +4,16 @@
 	background-position: center;
 	background-size: cover;
 
-
 	&__inner {
 		padding-left: 50%;
+
+		@media(max-width: 768px) {
+			padding-left: 30%;
+		}
+
+		@media(max-width: 576px) {
+			padding-left: 20%;
+		}
 	}
 
 	&__content {
@@ -14,7 +21,6 @@
 		padding: 100px 0 55px;
 		color: #fff;
 		max-width: 490px;
-
 	}
 
 	&__title {
@@ -23,6 +29,16 @@
 		line-height: 103px;
 		letter-spacing: 0.44px;
 		margin-bottom: 30px;
+
+		@media(max-width: 768px) {
+			font-size: 80px;
+			line-height: 80px;
+		}
+
+		@media(max-width: 576px) {
+			font-size: 50px;
+			line-height: 50px;
+		}
 	}
 
 	&__text {
@@ -30,22 +46,5 @@
 		margin-bottom: 40px;
 	}
 
-	&__btn {
-		background-color: rgb(0, 0, 255);
-		width: 170px;
-		height: 52px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-transform: uppercase;
-		@include font-bebas;
-		font-size: 17px;
-		letter-spacing: 0.6px;
-
-		transition: all 0.3s;
-
-		&:hover {
-			background-color: $violet;
-		}
-	}
+	&__btn {}
 }
