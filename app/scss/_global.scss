@@ -66,6 +66,17 @@ img {
 	padding: 0 15px;
 }
 
+.main {
+	padding-top: 105px;
+	@media(max-width: 768px) {
+		padding-top: 50px;
+	}
+}
+
+.lock {
+	overflow: hidden;
+}
+
 .logo {
 	transition: all 0.8s;
 	transform-origin: 0;
@@ -73,6 +84,55 @@ img {
 	&:hover {
 		transform: rotate(3deg);
 	}
+}
+
+.burger {
+	position: relative;
+	cursor: pointer;
+	display: block;
+	border: transparent;
+	outline: transparent;
+	background-color: transparent;
+	width: 30px;
+	height: 20px;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30px;
+		height: 7px;
+		border-radius: 5px;
+		background-color: $violet;
+		transition: all 0.3s;
+	}
+
+	&::after {
+		top: auto;
+		bottom: 0;
+		width: 50%;
+	}
+
+	&.active {
+
+		&::before,
+		&::after {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+			width: 100%;
+		}
+	}
+
 }
 
 .title {
@@ -104,8 +164,8 @@ img {
 	&:hover {
 		color: #fff;
 		background: linear-gradient(to top, $violet, lighten($violet, 10%), $violet, lighten($violet, 10%), $violet);
-		background-size: 200% 200%;
-		animation: bg 3s ease-in-out infinite;
+		background-size: 100% 200%;
+		animation: bg 5s ease-in-out infinite;
 	}
 
 	&--blue {

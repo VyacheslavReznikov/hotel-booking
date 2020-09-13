@@ -2,7 +2,7 @@
 	padding-top: 95px;
 
 	@media(max-width: 768px) {
-		padding: 50px 0;
+		padding: 50px 0 20px;
 	}
 
 	&__label {
@@ -71,6 +71,19 @@
 		@include font-bnb;
 		font-size: 50px;
 		margin-bottom: 15px;
+		position: relative;
+
+		transition: all 0.3s;
+
+		&:hover {
+			text-shadow: 3px 3px 5px $violet;
+		}
+
+		&:active {
+			transition: all 0.1s;		
+			transform: translateY(1px);
+			text-shadow:  -3px -3px 5px $violet;
+		}
 	}
 
 	&__text {
