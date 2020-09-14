@@ -84,6 +84,12 @@ img {
 	&:hover {
 		transform: rotate(3deg);
 	}
+
+	&__image {
+		@media(max-width: 768px) {
+			max-width: 70px;
+		}
+	}
 }
 
 .burger {
@@ -136,11 +142,27 @@ img {
 }
 
 .title {
+	max-width: 600px;
+	margin: 0 auto;
 	color: #000;
 	@include font-bnb;
+	font-size: 80px;
+	line-height: 1;
+	margin-bottom: 40px;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 3px;
+
+	@media(max-width: 992px) {
+		font-size: 60px;
+	}
+	@media(max-width: 768px) {
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+	@media(max-width: 576px) {
+		font-size: 30px;	
+	}
 }
 
 .btn {

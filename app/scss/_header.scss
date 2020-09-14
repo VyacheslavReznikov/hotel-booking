@@ -10,8 +10,7 @@
 	}
 
 	&.scrolled {
-		background-color: #fff !important;
-		// color: #fff;
+		background-color: #fff !important;	
 		transition: background-color 200ms linear;
 	}
 
@@ -59,12 +58,6 @@
 		@media(max-width: 768px) {
 			display: block;
 		}
-	}
-}
-
-.logo {
-	&__image {
-		width: 70px;
 	}
 }
 

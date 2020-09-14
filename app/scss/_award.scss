@@ -7,23 +7,13 @@
 
 	&__inner {}
 
-	&__title {
-		font-size: 55px;
-		margin-bottom: 30px;
-
-		@media(max-width: 576px) {
-			font-size: 36px;
-		}
-	}
+	&__title {}
 
 	&__row {
 		display: flex;
 		flex-wrap: wrap;
 		margin-left: -40px;
-
-		@media(max-width: 1170px) {
-			justify-content: space-evenly;
-		}
+		justify-content: center;
 
 		.product {
 			flex: 0 1 353px;
