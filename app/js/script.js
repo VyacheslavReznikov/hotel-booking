@@ -23,5 +23,11 @@ $(function() {
 		$('body').toggleClass('lock');
 	})
 
+	$('.menu__link').on('click', function(e) {
+		e.preventDefault();
+		$('.menu').removeClass('active');
+		$('.burger').removeClass('active');
+	})
+
 
 })
