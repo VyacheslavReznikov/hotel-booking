@@ -27,6 +27,7 @@ $(function() {
 		e.preventDefault();
 		$('.menu').removeClass('active');
 		$('.burger').removeClass('active');
+		$('body').removeClass('lock');
 	})
 
 
