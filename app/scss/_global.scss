@@ -23,6 +23,7 @@ body {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
+	overflow-x: hidden;
 }
 
 .content {
@@ -187,7 +188,7 @@ img {
 		color: #fff;
 		background: linear-gradient(to top, $violet, lighten($violet, 10%), $violet, lighten($violet, 10%), $violet);
 		background-size: 100% 200%;
-		animation: bg 5s ease-in-out infinite;
+		animation: bg 1.5s ease-in-out forwards;
 	}
 
 	&--blue {
@@ -206,11 +207,11 @@ img {
 		background-position: 0 -50%;
 	}
 
-	50% {
+	100% {
 		background-position: 0 100%;
 	}
 
-	100% {
-		background-position: 0 -50%;
-	}
+	// 100% {
+	// 	background-position: 0 -50%;
+	// }
 }

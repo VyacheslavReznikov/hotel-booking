@@ -12,13 +12,15 @@
 	&__row {
 		display: flex;
 		flex-wrap: wrap;
-		margin-left: -40px;
-		justify-content: center;
+		margin: 0 -20px;
 
 		.product {
-			flex: 0 1 353px;
-			margin-left: 40px;
+			flex: 0 1 33.333%;	
+			padding: 0 20px;
 
+			@media(max-width: 992px) {
+				flex-basis: 50%;
+			}
 			@media(max-width: 768px) {
 				flex-basis: 100%;
 			}

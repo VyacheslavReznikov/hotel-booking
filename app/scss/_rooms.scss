@@ -16,35 +16,33 @@
 	&__row {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
-		margin-left: -44px;
+		margin: 0 -20px;
 	}
 
 	&__column {
 		flex: 1;
-		margin-left: 44px;	
+		padding: 0 20px;	
+		margin: 0 -20px;
+		.product {
+			padding: 0 20px;
+		}
 
 		&--big {
 			flex: 2;
 		}
 
-		@media(max-width: 992px) {
-			margin-right: 0;
-			flex: 1 1 auto;
+		@media(max-width: 992px) {		
+			flex: 1 1 100%;
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: center;
+			justify-content: center;		
+		}
 
-			.product {
-				margin-right: 44px;
-				&:last-child {
-					margin-right: 0;
-				}
-
-				@media(max-width: 768px) {
-					margin-right: 0;
-				}
-			}
+		@media(max-width: 768px) {		
+			// flex: 1 1 100%;
+			// display: flex;
+			// flex-wrap: wrap;
+			// justify-content: center;		
 		}
 	}
 
